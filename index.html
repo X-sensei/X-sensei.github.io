@@ -17,6 +17,7 @@
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
             color: #fff;
+            margin: 0; /* Remove margin to touch sides */
         }
         .container {
             max-width: 1200px;
@@ -38,7 +39,7 @@
             padding: 10px 20px;
             border: none;
             cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow */
             transition: background-color 0.3s ease;
         }
         .btn:hover {
@@ -74,6 +75,7 @@
             background-color: rgba(0, 0, 0, 0.7);
             text-align: center;
             padding: 20px 0;
+            margin: 0; /* Remove margin to touch sides */
         }
         .brand h1 {
             font-size: 48px;
@@ -95,6 +97,21 @@
         p {
             font-size: 16px;
         }
+        .link {
+            text-decoration: none;
+        }
+        .join-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow */
+            transition: background-color 0.3s ease;
+        }
+        .join-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -103,14 +120,9 @@
             <h1 class="heading">Add <span>Bot</span></h1>
             <div class="icons-container">
                 <div class="icons">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>help@quenanya.live</p>
-                </div>
-                <div class="icons">
                     <i class="fas fa-users"></i>
                     <h3>Support Group</h3>
-                    <p><a target="_blank" href="https://main.olduser.live/support" class="link">Click here to Join</a></p>
+                    <p><a target="_blank" href="https://main.olduser.live/support" class="link"><button class="join-button">Join</button></a></p>
                 </div>
             </div>
             <div class="row">
