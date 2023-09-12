@@ -15,9 +15,9 @@
             font-family: Arial, sans-serif;
             color: #fff;
             margin: 0; /* Remove margin to touch sides */
-            overflow: hidden; /* Hide overflowing video content */
         }
         .container {
+            position: relative; /* Add relative positioning */
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
@@ -112,12 +112,13 @@
         }
         /* Added video styles */
         video {
-            position: fixed;
+            position: absolute; /* Change to absolute positioning */
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover; /* Ensure video covers the entire viewport */
+            z-index: -1; /* Place the video behind the content */
         }
     </style>
 </head>
@@ -126,7 +127,7 @@
     <video autoplay muted loop poster="https://graph.org/file/ce8e82a004cca3570124c.jpg">
         <source src="https://graph.org/file/ce8e82a004cca3570124c.mp4" type="video/mp4">
     </video>
-    
+
     <section class="contact" id="contact">
         <div class="container">
             <h1 class="heading">Add <span>Bot</span></h1>
@@ -138,6 +139,7 @@
                     <input type="submit" class="btn" value="Request Bot">
                 </form>
             </div>
+        </div>
     </section>
     <br>
     <br>
@@ -146,7 +148,7 @@
             <div class="icons">
                 <i class="fas fa-users"></i>
                 <h3>Our Official Support Group</h3>
-                <p><a target="_blank" href="https://chat.whatsapp.com/E97PJIxKEvcKpRZFq7QWNV" class="link"><button class="join-button">Join</button></a></p>
+                <p><a target="_blank" href="https://main.olduser.live/support" class="link"><button class="join-button">Join</button></a></p>
             </div>
         </div>
     </section>
@@ -154,7 +156,7 @@
     <section id="footer">
         <div class="container">
             <div class="brand">
-                <h1><span>RONEN BOTS.INC</h1>
+                <h1><span>RONEN BOTS.INC</span></h1>
             </div>
             <h2>WhatsApp is Fun with Bots...</h2>
             <div class="social-icon">
@@ -167,3 +169,4 @@
     <script src="http://quenanya-files.me/main/app.js"></script>
 </body>
 </html>
+
